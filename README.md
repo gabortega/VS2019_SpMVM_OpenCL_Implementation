@@ -1,5 +1,5 @@
-# VS2019_SpMV_OpenCL_Implementation
-Repository containing a VS2019 solution for testing out different SpMV solutions in OpenCL with the VS CUDA Profiler
+# VS2019_SpMVM_OpenCL_Implementation
+Repository containing a VS2019 solution for testing out different SpMVM solutions in OpenCL with the VS CUDA Profiler
 
 -------------------------------- Installation --------------------------------
 
@@ -16,12 +16,12 @@ The required lib/hpp files mentioned above have been included with this repo, ho
 Open VS solution file "SpMVM_OpenCL.sln". 
 Right-click on the solution in the Solution Explorer window and click on "Rebuild Solution".
 
-If all went well, you should be able to find the executable of each implementation in the Release folder (i.e. ...\VS2019_SpMV_OpenCL_Implementation\x64\Release). 
+If all went well, you should be able to find the executable of each implementation in the Release folder (i.e. ...\VS2019_SpMVM_OpenCL_Implementation\x64\Release). 
 However, it is much easier to just run each implementation from VS itself.
 
 To do this, right click on the project you wish to run (by project, I mean implementation but in VS terminology these are labeled as 'projects') and select "Select as StartUp Project". 
 Now, whenever you press either CTRL+F5 (Release mode) or F5 (Debug mode), VS will compile the selected project and run it.
 
-The implementations are entirely configurable via the "compiler_config.h" located at ...\VS2019_SpMV_OpenCL_Implementation\SpMVM_OpenCL\config
+The implementations are entirely configurable via the "compiler_config.h" located at ...\VS2019_SpMVM_OpenCL_Implementation\SpMVM_OpenCL\config
 
 NB: <del> HYB and COO implementations do not work properly... yet. </del> HYB has been replaced with a ELL-CSR combo instead of ELL-COO.
